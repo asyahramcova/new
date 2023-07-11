@@ -1,9 +1,9 @@
-
-function Buttons({chosenPet,petClothes}){
+import {data} from './data';
+function Buttons({chosenPet,petClothes, allClothes}){
 
    return(
-      <div className="cont" >
-          <button className="change"  onClick={() => chosenPet("cat")} >All</button>
+      <div className="btn-cont" >
+         <button className="change"  onClick={() => allClothes(data)} >All</button>
          <button className="change"  onClick={() => chosenPet("cat")} >Cats</button>
          <button className="change"  onClick={() => chosenPet("dog")} >Dogs</button>
          <button className="change" onClick={() => petClothes("accessories")}  >Accessories</button>
